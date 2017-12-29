@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB087EFF1FF6F27A00F41879 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087EFE1FF6F27A00F41879 /* AppDelegate.m */; };
+		AB087F051FF6F27A00F41879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB087F031FF6F27A00F41879 /* Main.storyboard */; };
+		AB087F071FF6F27A00F41879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB087F061FF6F27A00F41879 /* Assets.xcassets */; };
+		AB087F0A1FF6F27A00F41879 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB087F081FF6F27A00F41879 /* LaunchScreen.storyboard */; };
+		AB087F0D1FF6F27A00F41879 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F0C1FF6F27A00F41879 /* main.m */; };
+		AB087F171FF6F27A00F41879 /* ARSlideShow_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F161FF6F27A00F41879 /* ARSlideShow_ExampleTests.m */; };
+		AB087F221FF6F27A00F41879 /* ARSlideShow_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F211FF6F27A00F41879 /* ARSlideShow_ExampleUITests.m */; };
+		AB087F311FF6F32F00F41879 /* SlideShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F301FF6F32F00F41879 /* SlideShowViewController.m */; };
+		AB087F701FF6F4D100F41879 /* ARSlideShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F6B1FF6F4D100F41879 /* ARSlideShowController.m */; };
+		AB087F741FF6F4EB00F41879 /* ARSlideShowMusicController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F731FF6F4EB00F41879 /* ARSlideShowMusicController.m */; };
+		AB087F911FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F8D1FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m */; };
+		AB087F921FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F901FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.m */; };
+		AB087F951FF6F57000F41879 /* TestSlideShowImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F931FF6F57000F41879 /* TestSlideShowImageProvider.m */; };
+		AB087FA51FF6F64C00F41879 /* CubeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F981FF6F64C00F41879 /* CubeTransitionAnimator.m */; };
+		AB087FA61FF6F64C00F41879 /* ExplosionTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F9A1FF6F64C00F41879 /* ExplosionTransitionAnimation.m */; };
+		AB087FA71FF6F64C00F41879 /* FadeTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F9C1FF6F64C00F41879 /* FadeTransitionAnimator.m */; };
+		AB087FA81FF6F64C00F41879 /* IrisTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F9E1FF6F64C00F41879 /* IrisTransitionAnimation.m */; };
+		AB087FA91FF6F64C00F41879 /* NoAnimationTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */; };
+		AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */; };
+		AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB087F131FF6F27A00F41879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB087EF21FF6F27A00F41879 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB087EF91FF6F27A00F41879;
+			remoteInfo = "ARSlideShow-Example";
+		};
+		AB087F1E1FF6F27A00F41879 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB087EF21FF6F27A00F41879 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB087EF91FF6F27A00F41879;
+			remoteInfo = "ARSlideShow-Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB087EFA1FF6F27A00F41879 /* ARSlideShow-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARSlideShow-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB087EFD1FF6F27A00F41879 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB087EFE1FF6F27A00F41879 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB087F041FF6F27A00F41879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB087F061FF6F27A00F41879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB087F091FF6F27A00F41879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB087F0B1FF6F27A00F41879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB087F0C1FF6F27A00F41879 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB087F121FF6F27A00F41879 /* ARSlideShow-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARSlideShow-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB087F161FF6F27A00F41879 /* ARSlideShow_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSlideShow_ExampleTests.m; sourceTree = "<group>"; };
+		AB087F181FF6F27A00F41879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB087F1D1FF6F27A00F41879 /* ARSlideShow-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARSlideShow-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB087F211FF6F27A00F41879 /* ARSlideShow_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSlideShow_ExampleUITests.m; sourceTree = "<group>"; };
+		AB087F231FF6F27A00F41879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB087F2F1FF6F32F00F41879 /* SlideShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShowViewController.h; sourceTree = "<group>"; };
+		AB087F301FF6F32F00F41879 /* SlideShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideShowViewController.m; sourceTree = "<group>"; };
+		AB087F6B1FF6F4D100F41879 /* ARSlideShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSlideShowController.m; sourceTree = "<group>"; };
+		AB087F6C1FF6F4D100F41879 /* ARSlideShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSlideShowController.h; sourceTree = "<group>"; };
+		AB087F6D1FF6F4D100F41879 /* ARSlideShowTransitionAnimating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSlideShowTransitionAnimating.h; sourceTree = "<group>"; };
+		AB087F6E1FF6F4D100F41879 /* ARSlideShowImageProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSlideShowImageProviding.h; sourceTree = "<group>"; };
+		AB087F6F1FF6F4D100F41879 /* ARSlideShowMusicControlling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSlideShowMusicControlling.h; sourceTree = "<group>"; };
+		AB087F721FF6F4EB00F41879 /* ARSlideShowMusicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARSlideShowMusicController.h; sourceTree = "<group>"; };
+		AB087F731FF6F4EB00F41879 /* ARSlideShowMusicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSlideShowMusicController.m; sourceTree = "<group>"; };
+		AB087F8C1FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadingSlideShowImagePreparation.h; sourceTree = "<group>"; };
+		AB087F8D1FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadingSlideShowImagePreparation.m; sourceTree = "<group>"; };
+		AB087F8E1FF6F55F00F41879 /* SlideShowImagePreparation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideShowImagePreparation.h; sourceTree = "<group>"; };
+		AB087F8F1FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestImagesSlideShowImagePreparation.h; sourceTree = "<group>"; };
+		AB087F901FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestImagesSlideShowImagePreparation.m; sourceTree = "<group>"; };
+		AB087F931FF6F57000F41879 /* TestSlideShowImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSlideShowImageProvider.m; sourceTree = "<group>"; };
+		AB087F941FF6F57000F41879 /* TestSlideShowImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSlideShowImageProvider.h; sourceTree = "<group>"; };
+		AB087F971FF6F64C00F41879 /* CubeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087F981FF6F64C00F41879 /* CubeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087F991FF6F64C00F41879 /* ExplosionTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplosionTransitionAnimation.h; sourceTree = "<group>"; };
+		AB087F9A1FF6F64C00F41879 /* ExplosionTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplosionTransitionAnimation.m; sourceTree = "<group>"; };
+		AB087F9B1FF6F64C00F41879 /* FadeTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087F9C1FF6F64C00F41879 /* FadeTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087F9D1FF6F64C00F41879 /* IrisTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrisTransitionAnimation.h; sourceTree = "<group>"; };
+		AB087F9E1FF6F64C00F41879 /* IrisTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrisTransitionAnimation.m; sourceTree = "<group>"; };
+		AB087F9F1FF6F64C00F41879 /* NoAnimationTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoAnimationTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoAnimationTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087FA11FF6F64C00F41879 /* SlideTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087FA31FF6F64C00F41879 /* SpinTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinTransitionAnimator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB087EF71FF6F27A00F41879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F0F1FF6F27A00F41879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F1A1FF6F27A00F41879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB087EF11FF6F27A00F41879 = {
+			isa = PBXGroup;
+			children = (
+				AB087F321FF6F3D900F41879 /* ARSlideShow */,
+				AB087EFC1FF6F27A00F41879 /* ARSlideShow-Example */,
+				AB087F151FF6F27A00F41879 /* ARSlideShow-ExampleTests */,
+				AB087F201FF6F27A00F41879 /* ARSlideShow-ExampleUITests */,
+				AB087EFB1FF6F27A00F41879 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB087EFB1FF6F27A00F41879 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB087EFA1FF6F27A00F41879 /* ARSlideShow-Example.app */,
+				AB087F121FF6F27A00F41879 /* ARSlideShow-ExampleTests.xctest */,
+				AB087F1D1FF6F27A00F41879 /* ARSlideShow-ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB087EFC1FF6F27A00F41879 /* ARSlideShow-Example */ = {
+			isa = PBXGroup;
+			children = (
+				AB087EFD1FF6F27A00F41879 /* AppDelegate.h */,
+				AB087EFE1FF6F27A00F41879 /* AppDelegate.m */,
+				AB087F2F1FF6F32F00F41879 /* SlideShowViewController.h */,
+				AB087F301FF6F32F00F41879 /* SlideShowViewController.m */,
+				AB087F941FF6F57000F41879 /* TestSlideShowImageProvider.h */,
+				AB087F931FF6F57000F41879 /* TestSlideShowImageProvider.m */,
+				AB087F8B1FF6F55F00F41879 /* Image Preparation */,
+				AB087F031FF6F27A00F41879 /* Main.storyboard */,
+				AB087F081FF6F27A00F41879 /* LaunchScreen.storyboard */,
+				AB087F061FF6F27A00F41879 /* Assets.xcassets */,
+				AB087F0B1FF6F27A00F41879 /* Info.plist */,
+				AB087F0C1FF6F27A00F41879 /* main.m */,
+			);
+			path = "ARSlideShow-Example";
+			sourceTree = "<group>";
+		};
+		AB087F151FF6F27A00F41879 /* ARSlideShow-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F161FF6F27A00F41879 /* ARSlideShow_ExampleTests.m */,
+				AB087F181FF6F27A00F41879 /* Info.plist */,
+			);
+			path = "ARSlideShow-ExampleTests";
+			sourceTree = "<group>";
+		};
+		AB087F201FF6F27A00F41879 /* ARSlideShow-ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F211FF6F27A00F41879 /* ARSlideShow_ExampleUITests.m */,
+				AB087F231FF6F27A00F41879 /* Info.plist */,
+			);
+			path = "ARSlideShow-ExampleUITests";
+			sourceTree = "<group>";
+		};
+		AB087F321FF6F3D900F41879 /* ARSlideShow */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F6C1FF6F4D100F41879 /* ARSlideShowController.h */,
+				AB087F6B1FF6F4D100F41879 /* ARSlideShowController.m */,
+				AB087F6D1FF6F4D100F41879 /* ARSlideShowTransitionAnimating.h */,
+				AB087F6E1FF6F4D100F41879 /* ARSlideShowImageProviding.h */,
+				AB087F6F1FF6F4D100F41879 /* ARSlideShowMusicControlling.h */,
+				AB087F961FF6F64C00F41879 /* Transition Animators */,
+				AB087F711FF6F4EB00F41879 /* Music Controllers */,
+			);
+			name = ARSlideShow;
+			path = ../ARSlideShow;
+			sourceTree = "<group>";
+		};
+		AB087F711FF6F4EB00F41879 /* Music Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F721FF6F4EB00F41879 /* ARSlideShowMusicController.h */,
+				AB087F731FF6F4EB00F41879 /* ARSlideShowMusicController.m */,
+			);
+			path = "Music Controllers";
+			sourceTree = "<group>";
+		};
+		AB087F8B1FF6F55F00F41879 /* Image Preparation */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F8E1FF6F55F00F41879 /* SlideShowImagePreparation.h */,
+				AB087F8C1FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.h */,
+				AB087F8D1FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m */,
+				AB087F8F1FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.h */,
+				AB087F901FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.m */,
+			);
+			path = "Image Preparation";
+			sourceTree = "<group>";
+		};
+		AB087F961FF6F64C00F41879 /* Transition Animators */ = {
+			isa = PBXGroup;
+			children = (
+				AB087F9F1FF6F64C00F41879 /* NoAnimationTransitionAnimator.h */,
+				AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */,
+				AB087FA11FF6F64C00F41879 /* SlideTransitionAnimator.h */,
+				AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */,
+				AB087F971FF6F64C00F41879 /* CubeTransitionAnimator.h */,
+				AB087F981FF6F64C00F41879 /* CubeTransitionAnimator.m */,
+				AB087F991FF6F64C00F41879 /* ExplosionTransitionAnimation.h */,
+				AB087F9A1FF6F64C00F41879 /* ExplosionTransitionAnimation.m */,
+				AB087F9B1FF6F64C00F41879 /* FadeTransitionAnimator.h */,
+				AB087F9C1FF6F64C00F41879 /* FadeTransitionAnimator.m */,
+				AB087F9D1FF6F64C00F41879 /* IrisTransitionAnimation.h */,
+				AB087F9E1FF6F64C00F41879 /* IrisTransitionAnimation.m */,
+				AB087FA31FF6F64C00F41879 /* SpinTransitionAnimator.h */,
+				AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */,
+			);
+			path = "Transition Animators";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB087EF91FF6F27A00F41879 /* ARSlideShow-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB087F261FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-Example" */;
+			buildPhases = (
+				AB087EF61FF6F27A00F41879 /* Sources */,
+				AB087EF71FF6F27A00F41879 /* Frameworks */,
+				AB087EF81FF6F27A00F41879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARSlideShow-Example";
+			productName = "ARSlideShow-Example";
+			productReference = AB087EFA1FF6F27A00F41879 /* ARSlideShow-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB087F111FF6F27A00F41879 /* ARSlideShow-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB087F291FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-ExampleTests" */;
+			buildPhases = (
+				AB087F0E1FF6F27A00F41879 /* Sources */,
+				AB087F0F1FF6F27A00F41879 /* Frameworks */,
+				AB087F101FF6F27A00F41879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB087F141FF6F27A00F41879 /* PBXTargetDependency */,
+			);
+			name = "ARSlideShow-ExampleTests";
+			productName = "ARSlideShow-ExampleTests";
+			productReference = AB087F121FF6F27A00F41879 /* ARSlideShow-ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB087F1C1FF6F27A00F41879 /* ARSlideShow-ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB087F2C1FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-ExampleUITests" */;
+			buildPhases = (
+				AB087F191FF6F27A00F41879 /* Sources */,
+				AB087F1A1FF6F27A00F41879 /* Frameworks */,
+				AB087F1B1FF6F27A00F41879 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB087F1F1FF6F27A00F41879 /* PBXTargetDependency */,
+			);
+			name = "ARSlideShow-ExampleUITests";
+			productName = "ARSlideShow-ExampleUITests";
+			productReference = AB087F1D1FF6F27A00F41879 /* ARSlideShow-ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB087EF21FF6F27A00F41879 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Adrian Russell";
+				TargetAttributes = {
+					AB087EF91FF6F27A00F41879 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AB087F111FF6F27A00F41879 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB087EF91FF6F27A00F41879;
+					};
+					AB087F1C1FF6F27A00F41879 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB087EF91FF6F27A00F41879;
+					};
+				};
+			};
+			buildConfigurationList = AB087EF51FF6F27A00F41879 /* Build configuration list for PBXProject "ARSlideShow-Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB087EF11FF6F27A00F41879;
+			productRefGroup = AB087EFB1FF6F27A00F41879 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB087EF91FF6F27A00F41879 /* ARSlideShow-Example */,
+				AB087F111FF6F27A00F41879 /* ARSlideShow-ExampleTests */,
+				AB087F1C1FF6F27A00F41879 /* ARSlideShow-ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB087EF81FF6F27A00F41879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB087F0A1FF6F27A00F41879 /* LaunchScreen.storyboard in Resources */,
+				AB087F071FF6F27A00F41879 /* Assets.xcassets in Resources */,
+				AB087F051FF6F27A00F41879 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F101FF6F27A00F41879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F1B1FF6F27A00F41879 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB087EF61FF6F27A00F41879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB087FA91FF6F64C00F41879 /* NoAnimationTransitionAnimator.m in Sources */,
+				AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */,
+				AB087F911FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m in Sources */,
+				AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */,
+				AB087FA61FF6F64C00F41879 /* ExplosionTransitionAnimation.m in Sources */,
+				AB087FA51FF6F64C00F41879 /* CubeTransitionAnimator.m in Sources */,
+				AB087F311FF6F32F00F41879 /* SlideShowViewController.m in Sources */,
+				AB087F0D1FF6F27A00F41879 /* main.m in Sources */,
+				AB087FA71FF6F64C00F41879 /* FadeTransitionAnimator.m in Sources */,
+				AB087FA81FF6F64C00F41879 /* IrisTransitionAnimation.m in Sources */,
+				AB087F921FF6F55F00F41879 /* TestImagesSlideShowImagePreparation.m in Sources */,
+				AB087F741FF6F4EB00F41879 /* ARSlideShowMusicController.m in Sources */,
+				AB087EFF1FF6F27A00F41879 /* AppDelegate.m in Sources */,
+				AB087F951FF6F57000F41879 /* TestSlideShowImageProvider.m in Sources */,
+				AB087F701FF6F4D100F41879 /* ARSlideShowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F0E1FF6F27A00F41879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB087F171FF6F27A00F41879 /* ARSlideShow_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB087F191FF6F27A00F41879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB087F221FF6F27A00F41879 /* ARSlideShow_ExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB087F141FF6F27A00F41879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB087EF91FF6F27A00F41879 /* ARSlideShow-Example */;
+			targetProxy = AB087F131FF6F27A00F41879 /* PBXContainerItemProxy */;
+		};
+		AB087F1F1FF6F27A00F41879 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB087EF91FF6F27A00F41879 /* ARSlideShow-Example */;
+			targetProxy = AB087F1E1FF6F27A00F41879 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB087F031FF6F27A00F41879 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB087F041FF6F27A00F41879 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB087F081FF6F27A00F41879 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB087F091FF6F27A00F41879 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB087F241FF6F27A00F41879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB087F251FF6F27A00F41879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB087F271FF6F27A00F41879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB087F281FF6F27A00F41879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB087F2A1FF6F27A00F41879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARSlideShow-Example.app/ARSlideShow-Example";
+			};
+			name = Debug;
+		};
+		AB087F2B1FF6F27A00F41879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARSlideShow-Example.app/ARSlideShow-Example";
+			};
+			name = Release;
+		};
+		AB087F2D1FF6F27A00F41879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARSlideShow-Example";
+			};
+			name = Debug;
+		};
+		AB087F2E1FF6F27A00F41879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ARSlideShow-ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.adrianrussell.ARSlideShow-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ARSlideShow-Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB087EF51FF6F27A00F41879 /* Build configuration list for PBXProject "ARSlideShow-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB087F241FF6F27A00F41879 /* Debug */,
+				AB087F251FF6F27A00F41879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB087F261FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB087F271FF6F27A00F41879 /* Debug */,
+				AB087F281FF6F27A00F41879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB087F291FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB087F2A1FF6F27A00F41879 /* Debug */,
+				AB087F2B1FF6F27A00F41879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB087F2C1FF6F27A00F41879 /* Build configuration list for PBXNativeTarget "ARSlideShow-ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB087F2D1FF6F27A00F41879 /* Debug */,
+				AB087F2E1FF6F27A00F41879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB087EF21FF6F27A00F41879 /* Project object */;
+}
