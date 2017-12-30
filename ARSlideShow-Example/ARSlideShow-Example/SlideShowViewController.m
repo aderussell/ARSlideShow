@@ -30,7 +30,7 @@
 {
     [super viewDidAppear:animated];
     
-    [self createSlideShowWithDownloadProvider];
+    [self createSlideShowWithTestProvider];
 }
 
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations

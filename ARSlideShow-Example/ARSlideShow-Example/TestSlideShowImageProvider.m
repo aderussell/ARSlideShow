@@ -8,6 +8,7 @@
 
 #import "TestSlideShowImageProvider.h"
 #import "SlideTransitionAnimator.h"
+#import "BounceTransitionAnimator.h"
 #import "SpinTransitionAnimator.h"
 #import "CubeTransitionAnimator.h"
 #import "FadeTransitionAnimator.h"
@@ -46,8 +47,8 @@
     if (index % 5 == 1) {
         return [[FadeTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
     } else if (index % 5 == 2) {
-        SlideTransitionAnimator *slide = [[SlideTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
-        slide.slideDirection = SlideDirectionFromBottom;
+        BounceTransitionAnimator *slide = [[BounceTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        slide.slideDirection = SlideDirectionFromTop;
         return slide;
     } else if (index % 5 == 3) {
         return [[ExplosionTransitionAnimation alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];

@@ -27,6 +27,7 @@
 		AB087FA91FF6F64C00F41879 /* NoAnimationTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */; };
 		AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */; };
 		AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */; };
+		AB087FAE1FF83C4600F41879 /* BounceTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideTransitionAnimator.m; sourceTree = "<group>"; };
 		AB087FA31FF6F64C00F41879 /* SpinTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinTransitionAnimator.h; sourceTree = "<group>"; };
 		AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087FAC1FF83C4600F41879 /* BounceTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceTransitionAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 				AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */,
 				AB087FA11FF6F64C00F41879 /* SlideTransitionAnimator.h */,
 				AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */,
+				AB087FAC1FF83C4600F41879 /* BounceTransitionAnimator.h */,
+				AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */,
 				AB087F971FF6F64C00F41879 /* CubeTransitionAnimator.h */,
 				AB087F981FF6F64C00F41879 /* CubeTransitionAnimator.m */,
 				AB087F991FF6F64C00F41879 /* ExplosionTransitionAnimation.h */,
@@ -373,6 +378,7 @@
 				AB087FA61FF6F64C00F41879 /* ExplosionTransitionAnimation.m in Sources */,
 				AB087FA51FF6F64C00F41879 /* CubeTransitionAnimator.m in Sources */,
 				AB087F311FF6F32F00F41879 /* SlideShowViewController.m in Sources */,
+				AB087FAE1FF83C4600F41879 /* BounceTransitionAnimator.m in Sources */,
 				AB087F0D1FF6F27A00F41879 /* main.m in Sources */,
 				AB087FA71FF6F64C00F41879 /* FadeTransitionAnimator.m in Sources */,
 				AB087FA81FF6F64C00F41879 /* IrisTransitionAnimation.m in Sources */,

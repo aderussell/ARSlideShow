@@ -31,6 +31,10 @@
                            [UIImage imageNamed:@"Hawaiian Print"],
                            [UIImage imageNamed:@"Pink Lotus Flower"],
                            [UIImage imageNamed:@"Zebras"] ];
+    
+    if (completionHandler) {
+        completionHandler(YES, self.images, nil);
+    }
 }
 
 - (NSArray<UIImage *> *)images
