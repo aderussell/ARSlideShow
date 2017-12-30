@@ -104,10 +104,15 @@
         
     } else {
         // DID END
+        
+        self.currentImageIndex = 0;
+        
+        if ([self.delegate respondsToSelector:@selector(slideShowControllerDidEnd:willRepeat:)]) {
+            [self.delegate slideShowControllerDidEnd:self willRepeat:self.willRepeat];
+        }
+        
         if (self.willRepeat) {
-            self.currentImageIndex = 0;
             [self loadNextImage];
-            // START AGAIN
         }
     }
 }

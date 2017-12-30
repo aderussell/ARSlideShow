@@ -26,27 +26,50 @@
 #import "ARSlideShowTransitionAnimating.h"
 
 
-// looks after the audioController
-
-// controls getting the next image and animator and displaying the image
-
-// controls repeating and/or ending the slideshow
+@class ARSlideShowController;
 
 
+@protocol ARSlideShowControllerDelegate <NSObject>
+
+- (void)slideShowControllerDidEnd:(nonnull ARSlideShowController *)slideShowController willRepeat:(BOOL)willRepeat;
+
+@end
 
 
 @interface ARSlideShowController : NSObject
+
 
 - (nonnull instancetype)initWithImageProvider:(nonnull id<ARSlideShowImageProviding>)imageProvider
                                 containerView:(nonnull UIView *)containerView
                               musicController:(nullable id<ARSlideShowMusicControlling>)musicController;
 
+
+/**
+ *  The music controller that will manage audio played with the slide show.
+ *  This is optional.
+ */
 @property (nonatomic, strong, nullable, readonly) id<ARSlideShowMusicControlling> musicController;
 
+/**
+ *  The object that will provide all the images to be displayed in the slide show as well as all of the transitions to use between them.
+ */
 @property (nonatomic, strong, nonnull, readonly) id<ARSlideShowImageProviding> imageProvider;
 
-
+/**
+ *  The view upon which the images and transitions will be displayed.
+ */
 @property (nonatomic, strong, nonnull, readonly) UIView *containerView;
+
+
+/**
+ *  The delegate for the slide show controller.
+ *  THe object set as the delegate will be notified when the slide show controller reaches the end of the images supplied by the `imageProvider`.
+ */
+@property (nonatomic, weak, nullable) id<ARSlideShowControllerDelegate> delegate;
+
+
+
+/** @name Slide show options */
 
 /**
  *  Whether, or not, the slide show will repeat when it reaches the end of the images from the `imageProvider`.
