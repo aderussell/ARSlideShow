@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/aderussell/ARSlideShow.git", :tag => s.version.to_s }
 
-  s.source_files  = "ARSlideShow/*"
+  s.source_files  = "ARSlideShow/**/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

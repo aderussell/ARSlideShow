@@ -57,6 +57,8 @@
         imageView.frame = self.containerView.bounds;
         [self.containerView addSubview:self.presentedImageView];
         
+        [self.musicController startMusic];
+        
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.displayDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             _currentImageIndex++;
             [self loadNextImage];
@@ -67,6 +69,8 @@
 - (void)pauseSlideShow
 {
     self.animating = NO;
+    
+    [self.musicController endMusic];
 }
 
 
