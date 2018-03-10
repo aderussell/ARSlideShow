@@ -60,6 +60,11 @@
  */
 @property (nonatomic, strong, nonnull, readonly) UIView *containerView;
 
+/**
+ *  The content mode for the images views holding the images being displayed.
+ */
+@property (nonatomic) UIViewContentMode imageContentMode;
+
 
 /**
  *  The delegate for the slide show controller.
@@ -83,6 +88,13 @@
  */
 @property (nonatomic) NSTimeInterval displayDuration;
 
+
+/** @name Layout */
+
+/**
+ *  Forces a layout of the displayed image view to fit the frame of the `containerView`.
+ */
+- (void)performLayout;
 
 
 /** @name Controlling the slide show */

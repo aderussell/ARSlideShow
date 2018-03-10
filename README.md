@@ -4,6 +4,7 @@
 ## Creating a slide show
 
 
+
 ### A simple example
 
 ```
@@ -26,6 +27,12 @@ slideShowController.delegate = self;
 // start the slide show
 [slideShowController beginSlideShow];
 ```
+
+### Creating an image provider
+
+
+
+### Creating a music controller
 
 
 ## Available animated transitions

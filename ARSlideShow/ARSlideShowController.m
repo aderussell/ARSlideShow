@@ -36,10 +36,11 @@
                               musicController:(nullable id<ARSlideShowMusicControlling>)musicController
 {
     if (self = [super init]) {
-        _imageProvider   = imageProvider;
-        _containerView   = containerView;
-        _musicController = musicController;
-        _displayDuration = 5.0;
+        _imageProvider    = imageProvider;
+        _containerView    = containerView;
+        _musicController  = musicController;
+        _displayDuration  = 5.0;
+        _imageContentMode = UIViewContentModeScaleAspectFill;
     }
     return self;
 }
@@ -52,7 +53,8 @@
     if (self.imageProvider.numberOfImages > self.currentImageIndex) {
         UIImage *image = [self.imageProvider imageAtIndex:self.currentImageIndex];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.backgroundColor = self.containerView.backgroundColor;
+        imageView.contentMode = self.imageContentMode;
         self.presentedImageView = imageView;
         imageView.frame = self.containerView.bounds;
         [self.containerView addSubview:self.presentedImageView];
@@ -83,7 +85,8 @@
     if (self.imageProvider.numberOfImages > self.currentImageIndex) {
         UIImage *image = [self.imageProvider imageAtIndex:self.currentImageIndex];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        imageView.backgroundColor = self.containerView.backgroundColor;
+        imageView.contentMode = self.imageContentMode;
         imageView.frame = self.containerView.bounds;
         
         id<ARSlideShowTransitionAnimating> transitionAnimator = nil;
@@ -122,6 +125,12 @@
 }
 
 
+#pragma mark - Layout
+
+- (void)performLayout
+{
+    self.presentedImageView.frame = self.containerView.frame;
+}
 
 
 
