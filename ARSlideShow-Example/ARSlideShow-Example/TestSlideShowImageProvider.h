@@ -21,8 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (nullable id<ARSlideShowTransitionAnimating>)transitionAnimationForIndex:(NSUInteger)index
-                                                         existingImageView:(UIView *)existingImageView
-                                                       presentingImageView:(UIView *)imageView
+                                                         existingView:(UIView *)existingImageView
+                                                       presentingView:(UIView *)imageView
                                                              containerView:(UIView *)containerView;
 
 - (nullable id)interstitialAnimationForIndex:(NSUInteger)index;

@@ -33,15 +33,15 @@
 /**
  *  Initializes a transition animator with the specified image views to be animated and the container view where they will be shown and animated.
  *
- *  @param existingImageView The image view which is currently being displayed in the specified containerView. This must be removed from the containerView, by the created instance, by the end of the transition.
- *  @param targetImageView The image view to be displayed in the specified containerView. This must be added to the containerView and not removed at the end of the transition.
+ *  @param existingView  The view which is currently being displayed in the specified containerView. This must be removed from the containerView, by the created instance, by the end of the transition.
+ *  @param targetView    The view to be displayed in the specified containerView. This must be added to the containerView and not removed at the end of the transition.
  *  @param containerView The view where the existing and target image views to be displayed. This is the area where any transition can occur.
  *
  *  @return The newly initialized transition animator.
  */
-- (instancetype)initWithExistingImageView:(UIView *)existingImageView
-                          targetImageView:(UIView *)targetImageView
-                            containerView:(UIView *)containerView;
+- (instancetype)initWithExistingView:(UIView *)existingView
+                          targetView:(UIView *)targetView
+                       containerView:(UIView *)containerView;
 
 
 /**

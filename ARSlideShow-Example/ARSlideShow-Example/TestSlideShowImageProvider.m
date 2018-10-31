@@ -40,22 +40,22 @@
 }
 
 - (nullable id<ARSlideShowTransitionAnimating>)transitionAnimationForIndex:(NSUInteger)index
-                                                         existingImageView:(UIView *)existingImageView
-                                                       presentingImageView:(UIView *)imageView
+                                                         existingView:(UIView *)existingImageView
+                                                       presentingView:(UIView *)imageView
                                                              containerView:(UIView *)containerView
 {
     if (index % 5 == 1) {
-        return [[FadeTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        return [[FadeTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else if (index % 5 == 2) {
-        BounceTransitionAnimator *slide = [[BounceTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        BounceTransitionAnimator *slide = [[BounceTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
         slide.slideDirection = SlideDirectionFromTop;
         return slide;
     } else if (index % 5 == 3) {
-        return [[ExplosionTransitionAnimation alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        return [[ExplosionTransitionAnimation alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else if (index % 5 == 4) {
-        return [[IrisTransitionAnimation alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        return [[IrisTransitionAnimation alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else {
-        return [[SpinTransitionAnimator alloc] initWithExistingImageView:existingImageView targetImageView:imageView containerView:containerView];
+        return [[SpinTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     }
     
     return nil;

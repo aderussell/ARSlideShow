@@ -47,16 +47,16 @@
  *  The transition animator which should be used to transition between the specified image views.
  *  If nil is returned by this method then the slide show controller will use an instance of `NoAnimationTransitionAnimator` and no animation will occur.
  *
- *  @param index The index of the image which is going to be displayed with the returned animation.
- *  @param existingImageView The image view which contains the image being currently displayed.
- *  @param imageView The image view which contains the image which is going to be displayed.
- *  @param containerView The view where the image views are displayed and where the image will be performed.
+ *  @param index          The index of the image which is going to be displayed with the returned animation.
+ *  @param existingView   The view which contains the image being currently displayed.
+ *  @param presentingView The view which contains the image which is going to be displayed.
+ *  @param containerView  The view where the image views are displayed and where the image will be performed.
  *
  *  @return The transition animator to be used, or nil if the default should be used.
  */
 - (nullable id<ARSlideShowTransitionAnimating>)transitionAnimationForIndex:(NSUInteger)index
-                                                         existingImageView:(nonnull UIView *)existingImageView
-                                                       presentingImageView:(nonnull UIView *)imageView
+                                                              existingView:(nonnull UIView *)existingView
+                                                            presentingView:(nonnull UIView *)presentingView
                                                              containerView:(nonnull UIView *)containerView;
 
 @end

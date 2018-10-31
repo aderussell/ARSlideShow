@@ -25,8 +25,8 @@
 
 @implementation BounceTransitionAnimator
 
-- (instancetype)initWithExistingImageView:(UIView *)existingImageView
-                          targetImageView:(UIView *)targetImageView
+- (instancetype)initWithExistingView:(UIView *)existingImageView
+                          targetView:(UIView *)targetImageView
                             containerView:(UIView *)containerView
 {
     if (self = [super init]) {

@@ -90,11 +90,11 @@
         imageView.frame = self.containerView.bounds;
         
         id<ARSlideShowTransitionAnimating> transitionAnimator = nil;
-        if ([self.imageProvider respondsToSelector:@selector(transitionAnimationForIndex:existingImageView:presentingImageView:containerView:)]) {
-            transitionAnimator = [self.imageProvider transitionAnimationForIndex:self.currentImageIndex existingImageView:self.presentedImageView presentingImageView:imageView containerView:self.containerView];
+        if ([self.imageProvider respondsToSelector:@selector(transitionAnimationForIndex:existingView:presentingView:containerView:)]) {
+            transitionAnimator = [self.imageProvider transitionAnimationForIndex:self.currentImageIndex existingView:self.presentedImageView presentingView:imageView containerView:self.containerView];
         }
         if (!transitionAnimator) {
-            transitionAnimator = [[NoAnimationTransitionAnimator alloc] initWithExistingImageView:self.presentedImageView targetImageView:imageView containerView:self.containerView];
+            transitionAnimator = [[NoAnimationTransitionAnimator alloc] initWithExistingView:self.presentedImageView targetView:imageView containerView:self.containerView];
         }
         
         self.presentedImageView = imageView;
