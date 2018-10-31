@@ -28,6 +28,7 @@
 		AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */; };
 		AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */; };
 		AB087FAE1FF83C4600F41879 /* BounceTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */; };
+		AB51E152218A2DA60067DC8A /* ScreenshotImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51E151218A2DA60067DC8A /* ScreenshotImageProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinTransitionAnimator.m; sourceTree = "<group>"; };
 		AB087FAC1FF83C4600F41879 /* BounceTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceTransitionAnimator.h; sourceTree = "<group>"; };
 		AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceTransitionAnimator.m; sourceTree = "<group>"; };
+		AB51E150218A2DA60067DC8A /* ScreenshotImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotImageProvider.h; sourceTree = "<group>"; };
+		AB51E151218A2DA60067DC8A /* ScreenshotImageProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenshotImageProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +154,8 @@
 				AB087F301FF6F32F00F41879 /* SlideShowViewController.m */,
 				AB087F941FF6F57000F41879 /* TestSlideShowImageProvider.h */,
 				AB087F931FF6F57000F41879 /* TestSlideShowImageProvider.m */,
+				AB51E150218A2DA60067DC8A /* ScreenshotImageProvider.h */,
+				AB51E151218A2DA60067DC8A /* ScreenshotImageProvider.m */,
 				AB087F8B1FF6F55F00F41879 /* Image Preparation */,
 				AB087F031FF6F27A00F41879 /* Main.storyboard */,
 				AB087F081FF6F27A00F41879 /* LaunchScreen.storyboard */,
@@ -373,6 +378,7 @@
 			files = (
 				AB087FA91FF6F64C00F41879 /* NoAnimationTransitionAnimator.m in Sources */,
 				AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */,
+				AB51E152218A2DA60067DC8A /* ScreenshotImageProvider.m in Sources */,
 				AB087F911FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m in Sources */,
 				AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */,
 				AB087FA61FF6F64C00F41879 /* ExplosionTransitionAnimation.m in Sources */,

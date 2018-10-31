@@ -11,6 +11,7 @@
 #import "TestImagesSlideShowImagePreparation.h"
 #import "DownloadingSlideShowImagePreparation.h"
 #import "TestSlideShowImageProvider.h"
+#import "ScreenshotImageProvider.h"
 
 @interface SlideShowViewController () <ARSlideShowControllerDelegate>
 @property (nonatomic, strong, nullable) ARSlideShowController *slideShowController;
@@ -78,6 +79,18 @@
             });
         }
     }];
+}
+
+- (void)createSlideShowForScreenshots
+{
+    id<ARSlideShowImageProviding> imageProvider = [[ScreenshotImageProvider alloc] init];
+    
+    self.slideShowController = [[ARSlideShowController alloc] initWithImageProvider:imageProvider containerView:self.view musicController:nil];
+    self.slideShowController.repeat   = NO;
+    self.slideShowController.delegate = self;
+    self.slideShowController.displayDuration = 3.0;
+    
+    [self.slideShowController beginSlideShow];
 }
 
 
