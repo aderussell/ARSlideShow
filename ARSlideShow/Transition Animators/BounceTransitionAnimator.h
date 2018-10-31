@@ -28,8 +28,8 @@
 @interface BounceTransitionAnimator : NSObject <ARSlideShowTransitionAnimating>
 
 
-- (instancetype)initWithExistingImageView:(UIImageView *)existingImageView
-                          targetImageView:(UIImageView *)targetImageView
+- (instancetype)initWithExistingImageView:(UIView *)existingImageView
+                          targetImageView:(UIView *)targetImageView
                             containerView:(UIView *)containerView;
 
 

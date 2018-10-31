@@ -28,8 +28,8 @@
 
 @implementation ExplosionTransitionAnimation
 
-- (instancetype)initWithExistingImageView:(UIImageView *)existingImageView
-                          targetImageView:(UIImageView *)targetImageView
+- (instancetype)initWithExistingImageView:(UIView *)existingImageView
+                          targetImageView:(UIView *)targetImageView
                             containerView:(UIView *)containerView
 {
     if (self = [super init]) {

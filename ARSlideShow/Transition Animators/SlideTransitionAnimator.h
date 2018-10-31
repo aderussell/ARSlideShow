@@ -34,8 +34,8 @@ typedef NS_ENUM(NSUInteger, SlideDirection) {
 @interface SlideTransitionAnimator : NSObject <ARSlideShowTransitionAnimating>
 
 
-- (instancetype)initWithExistingImageView:(UIImageView *)existingImageView
-                          targetImageView:(UIImageView *)targetImageView
+- (instancetype)initWithExistingImageView:(UIView *)existingImageView
+                          targetImageView:(UIView *)targetImageView
                             containerView:(UIView *)containerView;
 
 

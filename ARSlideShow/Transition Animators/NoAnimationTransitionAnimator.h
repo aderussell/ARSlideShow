@@ -23,10 +23,13 @@
 #import <UIKit/UIKit.h>
 #import "ARSlideShowTransitionAnimating.h"
 
+/**
+ *  A transition animator that will not perform an animation but will immediately remove the existing imageview and show the target imageview.
+ */
 @interface NoAnimationTransitionAnimator : NSObject <ARSlideShowTransitionAnimating>
 
-- (instancetype)initWithExistingImageView:(UIImageView *)existingImageView
-                          targetImageView:(UIImageView *)targetImageView
+- (instancetype)initWithExistingImageView:(UIView *)existingImageView
+                          targetImageView:(UIView *)targetImageView
                             containerView:(UIView *)containerView;
 
 

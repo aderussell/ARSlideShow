@@ -23,15 +23,40 @@
 #import <UIKit/UIKit.h>
 #import "ARSlideShowTransitionAnimating.h"
 
+/**
+ *  The protocol which defines the interface for an object which will provide all of the images and the transition animations to a slide show controller.
+ */
 @protocol ARSlideShowImageProviding <NSObject>
 
-- (NSUInteger)numberOfImages;
+/**
+ *  The number of images that are to be shown in the slideshow.
+ */
+@property (nonatomic, readonly) NSUInteger numberOfImages;
 
+
+/**
+ *  Returns the image to be displayed in the slide show at the specified index.
+ *
+ *  @param index The index of the image to return.
+ *  @return The image to be displayed at the specified index.
+ */
 - (nonnull UIImage *)imageAtIndex:(NSUInteger)index;
 
+
+/**
+ *  The transition animator which should be used to transition between the specified image views.
+ *  If nil is returned by this method then the slide show controller will use an instance of `NoAnimationTransitionAnimator` and no animation will occur.
+ *
+ *  @param index The index of the image which is going to be displayed with the returned animation.
+ *  @param existingImageView The image view which contains the image being currently displayed.
+ *  @param imageView The image view which contains the image which is going to be displayed.
+ *  @param containerView The view where the image views are displayed and where the image will be performed.
+ *
+ *  @return The transition animator to be used, or nil if the default should be used.
+ */
 - (nullable id<ARSlideShowTransitionAnimating>)transitionAnimationForIndex:(NSUInteger)index
-                                                         existingImageView:(nonnull UIImageView *)existingImageView
-                                                       presentingImageView:(nonnull UIImageView *)imageView
+                                                         existingImageView:(nonnull UIView *)existingImageView
+                                                       presentingImageView:(nonnull UIView *)imageView
                                                              containerView:(nonnull UIView *)containerView;
 
 @end

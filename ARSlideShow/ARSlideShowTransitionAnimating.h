@@ -22,12 +22,33 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  The protocol which defines the interface for a transition animator which will control displaying of image views along with any animations.
+ *
+ *  A transition animator is responsible for adding the `targetImageView` to and removing the `existingImageView` from the `containerView`.
+ */
 @protocol ARSlideShowTransitionAnimating <NSObject>
 
-- (instancetype)initWithExistingImageView:(UIImageView *)existingImageView
-                          targetImageView:(UIImageView *)targetImageView
+
+/**
+ *  Initializes a transition animator with the specified image views to be animated and the container view where they will be shown and animated.
+ *
+ *  @param existingImageView The image view which is currently being displayed in the specified containerView. This must be removed from the containerView, by the created instance, by the end of the transition.
+ *  @param targetImageView The image view to be displayed in the specified containerView. This must be added to the containerView and not removed at the end of the transition.
+ *  @param containerView The view where the existing and target image views to be displayed. This is the area where any transition can occur.
+ *
+ *  @return The newly initialized transition animator.
+ */
+- (instancetype)initWithExistingImageView:(UIView *)existingImageView
+                          targetImageView:(UIView *)targetImageView
                             containerView:(UIView *)containerView;
 
+
+/**
+ *  Starts the transition of the image views.
+ *
+ *  @param completionHandler A block which will be called when the transition is complete. It has a single paramter `didComplete` which indicates if the animation successfully completed or was stopped early.
+ */
 - (void)startTransition:(void(^)(BOOL didComplete))completionHandler;
 
 @end

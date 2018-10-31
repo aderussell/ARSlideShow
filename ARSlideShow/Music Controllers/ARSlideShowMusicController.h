@@ -26,6 +26,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ *  A slide show music controller which will play media items from devices iTunes Music Library.
+ */
 @interface ARSlideShowMusicController : NSObject <ARSlideShowMusicControlling>
 
 - (instancetype)initWithMediaQuery:(MPMediaQuery *)mediaQuery;

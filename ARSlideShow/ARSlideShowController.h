@@ -28,17 +28,43 @@
 
 @class ARSlideShowController;
 
-
+/**
+ *  The protocol which defines the interface for a delegate to a slide show controller.
+ *  The delegate will be notified when the slide show has reached the end of the images provided by its imageProvider.
+ */
 @protocol ARSlideShowControllerDelegate <NSObject>
 
+/**
+ *  Notifies the receiver that the specified slide show controller has now displayed all of the images provided by its `imageProvider` and whether, or not, it will display them all again or will stop displaying anything.
+ *
+ *  This allows any needed actions to be taken by the receiver then the slide show has completed.
+ *  An example whould be to stop displaying the slideshow and releasing all the resources no longer needed.
+ *
+ *  @param slideShowController The slide show that has reached the end.
+ *  @param willRepeat Whether, or not, the images in the slide show will be repeated again.
+ */
 - (void)slideShowControllerDidEnd:(nonnull ARSlideShowController *)slideShowController willRepeat:(BOOL)willRepeat;
 
 @end
 
 
+/**
+ *  A slide show controller which will control the flow of presenting a series of images as a slide show with animated transitions and background music.
+ *
+ *  The controller will take the images supplied by a specified ARSlideShowImageProviding image provider and display then on a specified conytainerView. The transitions will be provided by the same image provider and will be triggered by the slide show controller.
+ *  If a music controller is specified then this will be used by the controller to start and stop music being played along with displaying the images.
+ */
 @interface ARSlideShowController : NSObject
 
 
+/**
+ *  Initializes and returns a new slide shown controller which will manage a slide show displaying the images provided by the specified imageProvider on the specified containerView.
+
+ @param imageProvider The image provider which will display all the images and transition animators to be used in the slide shown.
+ @param containerView The view upon which all of the images and transitions will be dispalyed.
+ @param musicController An optional music controller which can play audio along with the slide show.
+ @return The newly initialized slide show controller.
+ */
 - (nonnull instancetype)initWithImageProvider:(nonnull id<ARSlideShowImageProviding>)imageProvider
                                 containerView:(nonnull UIView *)containerView
                               musicController:(nullable id<ARSlideShowMusicControlling>)musicController;
@@ -89,6 +115,7 @@
 @property (nonatomic) NSTimeInterval displayDuration;
 
 
+
 /** @name Layout */
 
 /**
@@ -97,11 +124,17 @@
 - (void)performLayout;
 
 
+
 /** @name Controlling the slide show */
 
-
+/**
+ *  Starts or resumes the slide show and starts the `musicController`.
+ */
 - (void)beginSlideShow;
 
+/**
+ *  Pauses transitioning to new images given by the `imageProvider` and stop the `musicController`.
+ */
 - (void)pauseSlideShow;
 
 @end

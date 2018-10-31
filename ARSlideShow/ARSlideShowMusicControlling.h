@@ -22,10 +22,19 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  The protocol that defines the interface for a music controller used by a slide show controller.
+ */
 @protocol ARSlideShowMusicControlling <NSObject>
 
+/**
+ *  Start playing any music.
+ */
 - (void)startMusic;
 
+/**
+ *  Pause or stop playing any music.
+ */
 - (void)endMusic;
 
 @end

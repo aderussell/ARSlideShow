@@ -62,7 +62,7 @@
         [self.musicController startMusic];
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.displayDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            _currentImageIndex++;
+            self->_currentImageIndex++;
             [self loadNextImage];
         });
     }
@@ -102,7 +102,7 @@
         
         [transitionAnimator startTransition:^(BOOL didComplete) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.displayDuration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                _currentImageIndex++;
+                self->_currentImageIndex++;
                 [self loadNextImage];
             });
         }];
