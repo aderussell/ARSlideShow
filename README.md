@@ -87,6 +87,19 @@ An image provider must conform to `ARSlideShowImageProviding`. There are three m
 
 ### Creating a music controller
 
+A music controller must conform to `ARSlideShowMusicControlling`. There are two methods to implement:
+
+``` objective-c
+/**
+ *  Start playing any music.
+ */
+- (void)startMusic;
+
+/**
+ *  Pause or stop playing any music.
+ */
+- (void)endMusic;
+```
 
 
 
