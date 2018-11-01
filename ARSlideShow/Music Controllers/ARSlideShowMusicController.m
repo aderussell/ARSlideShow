@@ -27,7 +27,11 @@
 - (instancetype)initWithMediaQuery:(MPMediaQuery *)mediaQuery
 {
     if (self = [super init]) {
-        _musicPlayerController = [MPMusicPlayerController applicationQueuePlayer];
+        if (@available(iOS 10.3, *)) {
+            _musicPlayerController = [MPMusicPlayerController applicationQueuePlayer];
+        } else {
+            _musicPlayerController = [MPMusicPlayerController applicationMusicPlayer];
+        }
         [_musicPlayerController setQueueWithQuery:mediaQuery];
         [self prepareMusic];
     }
