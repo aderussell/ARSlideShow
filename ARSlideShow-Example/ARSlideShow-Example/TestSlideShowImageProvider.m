@@ -9,7 +9,7 @@
 #import "TestSlideShowImageProvider.h"
 #import "SlideTransitionAnimator.h"
 #import "BounceTransitionAnimator.h"
-#import "SpinTransitionAnimator.h"
+#import "FlipTransitionAnimator.h"
 #import "CubeTransitionAnimator.h"
 #import "FadeTransitionAnimator.h"
 #import "IrisTransitionAnimation.h"
@@ -55,7 +55,7 @@
     } else if (index % 5 == 4) {
         return [[IrisTransitionAnimation alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else {
-        return [[SpinTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
+        return [[FlipTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     }
     
     return nil;

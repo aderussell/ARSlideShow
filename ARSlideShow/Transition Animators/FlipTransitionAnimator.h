@@ -1,5 +1,5 @@
 //
-//  SpinTransitionAnimator.h
+//  FlipTransitionAnimator.h
 //
 //  Created by Adrian Russell on 12/12/2017.
 //  Copyright © 2017 Adrian Russell. All rights reserved.
@@ -23,7 +23,7 @@
 #import <Foundation/Foundation.h>
 #import "ARSlideShowTransitionAnimating.h"
 
-@interface SpinTransitionAnimator : NSObject <ARSlideShowTransitionAnimating>
+@interface FlipTransitionAnimator : NSObject <ARSlideShowTransitionAnimating>
 
 - (instancetype)initWithExistingView:(UIView *)existingImageView
                           targetView:(UIView *)targetImageView

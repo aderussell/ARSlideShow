@@ -26,7 +26,7 @@
 		AB087FA81FF6F64C00F41879 /* IrisTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087F9E1FF6F64C00F41879 /* IrisTransitionAnimation.m */; };
 		AB087FA91FF6F64C00F41879 /* NoAnimationTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */; };
 		AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */; };
-		AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */; };
+		AB087FAB1FF6F64C00F41879 /* FlipTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FA41FF6F64C00F41879 /* FlipTransitionAnimator.m */; };
 		AB087FAE1FF83C4600F41879 /* BounceTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */; };
 		AB51E152218A2DA60067DC8A /* ScreenshotImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51E151218A2DA60067DC8A /* ScreenshotImageProvider.m */; };
 /* End PBXBuildFile section */
@@ -91,8 +91,8 @@
 		AB087FA01FF6F64C00F41879 /* NoAnimationTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoAnimationTransitionAnimator.m; sourceTree = "<group>"; };
 		AB087FA11FF6F64C00F41879 /* SlideTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideTransitionAnimator.h; sourceTree = "<group>"; };
 		AB087FA21FF6F64C00F41879 /* SlideTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideTransitionAnimator.m; sourceTree = "<group>"; };
-		AB087FA31FF6F64C00F41879 /* SpinTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinTransitionAnimator.h; sourceTree = "<group>"; };
-		AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinTransitionAnimator.m; sourceTree = "<group>"; };
+		AB087FA31FF6F64C00F41879 /* FlipTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipTransitionAnimator.h; sourceTree = "<group>"; };
+		AB087FA41FF6F64C00F41879 /* FlipTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipTransitionAnimator.m; sourceTree = "<group>"; };
 		AB087FAC1FF83C4600F41879 /* BounceTransitionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BounceTransitionAnimator.h; sourceTree = "<group>"; };
 		AB087FAD1FF83C4600F41879 /* BounceTransitionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceTransitionAnimator.m; sourceTree = "<group>"; };
 		AB51E150218A2DA60067DC8A /* ScreenshotImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenshotImageProvider.h; sourceTree = "<group>"; };
@@ -237,8 +237,8 @@
 				AB087F9C1FF6F64C00F41879 /* FadeTransitionAnimator.m */,
 				AB087F9D1FF6F64C00F41879 /* IrisTransitionAnimation.h */,
 				AB087F9E1FF6F64C00F41879 /* IrisTransitionAnimation.m */,
-				AB087FA31FF6F64C00F41879 /* SpinTransitionAnimator.h */,
-				AB087FA41FF6F64C00F41879 /* SpinTransitionAnimator.m */,
+				AB087FA31FF6F64C00F41879 /* FlipTransitionAnimator.h */,
+				AB087FA41FF6F64C00F41879 /* FlipTransitionAnimator.m */,
 			);
 			path = "Transition Animators";
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				AB087FAA1FF6F64C00F41879 /* SlideTransitionAnimator.m in Sources */,
 				AB51E152218A2DA60067DC8A /* ScreenshotImageProvider.m in Sources */,
 				AB087F911FF6F55F00F41879 /* DownloadingSlideShowImagePreparation.m in Sources */,
-				AB087FAB1FF6F64C00F41879 /* SpinTransitionAnimator.m in Sources */,
+				AB087FAB1FF6F64C00F41879 /* FlipTransitionAnimator.m in Sources */,
 				AB087FA61FF6F64C00F41879 /* ExplosionTransitionAnimation.m in Sources */,
 				AB087FA51FF6F64C00F41879 /* CubeTransitionAnimator.m in Sources */,
 				AB087F311FF6F32F00F41879 /* SlideShowViewController.m in Sources */,

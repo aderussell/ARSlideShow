@@ -10,7 +10,7 @@
 #import "NoAnimationTransitionAnimator.h"
 #import "SlideTransitionAnimator.h"
 #import "BounceTransitionAnimator.h"
-#import "SpinTransitionAnimator.h"
+#import "FlipTransitionAnimator.h"
 #import "CubeTransitionAnimator.h"
 #import "FadeTransitionAnimator.h"
 #import "IrisTransitionAnimation.h"
@@ -46,7 +46,7 @@
         slide.slideDirection = SlideDirectionFromTop;
         return slide;
     } else if (index == 7) {
-        return [[SpinTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
+        return [[FlipTransitionAnimator alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else if (index == 9) {
         return [[IrisTransitionAnimation alloc] initWithExistingView:existingImageView targetView:imageView containerView:containerView];
     } else if (index == 11) {

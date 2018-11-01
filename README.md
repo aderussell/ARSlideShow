@@ -93,10 +93,41 @@ An image provider must conform to `ARSlideShowImageProviding`. There are three m
 ## Available animated transitions
 
 * No Animation (`NoAnimationTransitionAnimator`)
+
+![](readme assets/none.gif)
+
+
 * Slide (`SlideTransitionAnimator`)
+
+![](readme assets/slide.gif)
+
+
 * Bounce (`BounceTransitionAnimator`)
-* Spin (`SpinTransitionAnimator`)
+
+![](readme assets/none.gif)
+
+
+* Flip (`FlipTransitionAnimator`)
+
+![](readme assets/flip.gif)
+
+
 * Cube (`CubeTransitionAnimator`)
+
+![](readme assets/cube.gif)
+
+
 * Fade (`FadeTransitionAnimator`)
+
+![](readme assets/fade.gif)
+
+
 * Iris In (`IrisTransitionAnimation`)
+
+![](readme assets/iris.gif)
+
+
 * Explosion (`ExplosionTransitionAnimation`)
+
+![](readme assets/explosion.gif)
+

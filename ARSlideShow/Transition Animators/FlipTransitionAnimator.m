@@ -1,5 +1,5 @@
 //
-//  SpinTransitionAnimator.m
+//  FlipTransitionAnimator.m
 //
 //  Created by Adrian Russell on 12/12/2017.
 //  Copyright © 2017 Adrian Russell. All rights reserved.
@@ -20,9 +20,9 @@
 //     distribution.
 //
 
-#import "SpinTransitionAnimator.h"
+#import "FlipTransitionAnimator.h"
 
-@implementation SpinTransitionAnimator
+@implementation FlipTransitionAnimator
 
 - (instancetype)initWithExistingView:(UIView *)existingImageView
                           targetView:(UIView *)targetImageView
