@@ -104,7 +104,7 @@ An image provider must conform to `ARSlideShowImageProviding`. There are three m
 
 * Bounce (`BounceTransitionAnimator`)
 
-![](readme_assets/none.gif)
+![](readme_assets/bounce.gif)
 
 
 * Flip (`FlipTransitionAnimator`)
@@ -129,5 +129,5 @@ An image provider must conform to `ARSlideShowImageProviding`. There are three m
 
 * Explosion (`ExplosionTransitionAnimation`)
 
-![](readme_assets/explosion.gif)
+![](readme_assets/explode.gif)
 
