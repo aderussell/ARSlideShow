@@ -46,7 +46,11 @@
 - (instancetype)initWithMediaItemCollection:(MPMediaItemCollection *)mediaItemCollection
 {
     if (self = [super init]) {
-        _musicPlayerController = [MPMusicPlayerController applicationQueuePlayer];
+        if (@available(iOS 10.3, *)) {
+            _musicPlayerController = [MPMusicPlayerController applicationQueuePlayer];
+        } else {
+            _musicPlayerController = [MPMusicPlayerController applicationMusicPlayer];
+        }
         [_musicPlayerController setQueueWithItemCollection:mediaItemCollection];
         [self prepareMusic];
     }
